@@ -11,58 +11,67 @@
     />
     <title>Weather app</title>
   </head>
-  <body>
-    <div class="container">
-      <form class="row">
-        <div class="col-9">
-          <input
-            type="text"
-            class="form-control"
-            id="inputCity"
-            placeholder="Enter city"
-          />
+  <body class="background">
+    <div class="card">
+      <div class="container">
+        <br />
+        <form class="row">
+          <div class="col-9">
+            <input
+              type="text"
+              class="form-control"
+              id="inputCity"
+              placeholder="Enter a city"
+            />
+          </div>
+          <div class="col-3">
+            <button type="submit" class="btn btn-primary w-100">Search</button>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-8">
+            <h1>Kyiv, Ukraine</h1>
+          </div>
+          <div class="col-4" id="date">Last updated: <br />Thuesday 06:46</div>
         </div>
-        <div class="col-3">
-          <button type="submit" class="btn btn-primary w-100">Search</button>
-        </div>
-      </form>
-
-      <h1>Kyiv, Ukraine</h1>
-      <ul>
-        <li>Last updated: Thuesday 06:46</li>
-        <li>Mostly cloudy</li>
-      </ul>
-
-      <div class="row">
-        <div class="col-6">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
-            alt="Mostly cloudy"
-          />
-          <span><strong>25</strong>°C|°F</span>
-        </div>
-        <div class="col-6">
-          <div class="list-group">
-            <a
-              href="#"
-              class="list-group-item list-group-item-action list-group-item-dark"
-              >Humidity: 67%
-            </a>
-            <a
-              href="#"
-              class="list-group-item list-group-item-action list-group-item-dark"
-              >Wind: 19 km/h
-            </a>
-            <a
-              href="#"
-              class="list-group-item list-group-item-action list-group-item-dark"
-              >Pressure: 1017 mb</a
+        <p class="description">Mostly cloudy</p>
+        <div class="row">
+          <div class="col-8" id="temperature">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+              alt="Mostly cloudy"
+            />
+            <span
+              ><strong> 25</strong
+              ><span class="units"
+                ><a href="#">°C</a>|<a href="#">°F</a></span
+              ></span
             >
+          </div>
+          <div class="col-4">
+            <div class="list-group">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action list-group-item-dark"
+                >Humidity: 67%
+              </a>
+              <a
+                href="#"
+                class="list-group-item list-group-item-action list-group-item-dark"
+                >Wind: 19 km/h
+              </a>
+              <a
+                href="#"
+                class="list-group-item list-group-item-action list-group-item-dark"
+                >Pressure: 1017 mb</a
+              >
+            </div>
           </div>
         </div>
       </div>
-
-      <p><a href=""Open-source code by Victoria Gerasimenko</p>
+      <p class="link-github">
+        <a href="#">Open-source code</a> by Victoria Gerasimenko
+      </p>
     </div>
 
     <script src="src/app.js"></script>

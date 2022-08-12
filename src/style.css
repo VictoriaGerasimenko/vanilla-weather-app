@@ -1,4 +1,87 @@
-body {
-  margin-top: 30px;
-  background-color: #f9f7fd;
+div.card {
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  background: #ffe1aa8a;
+  border-radius: 18px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  padding: 30px;
+  color: rgba(39, 33, 66, 0.594);
+  display: block;
+  margin: 0 auto;
+  width: 800px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  border: #fbe8b6;
+}
+div h1 {
+  margin-top: 20px;
+  line-height: 29px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  color: #272142;
+  padding-top: 30px;
+}
+
+button.btn {
+  background-color: #1b8ce8;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  height: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+#inputCity {
+  background: #f7cc5472;
+  border: none;
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+}
+strong {
+  color: #212121;
+  font-weight: 400;
+  margin-left: 40px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1;
+
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+}
+#temperature {
+  margin-top: 40px;
+  padding-left: 40px;
+}
+img {
+  width: 90px;
+  height: 90px;
+}
+.link-github {
+  margin-top: 80px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+body.background {
+  background: white;
+}
+#date {
+  padding-top: 40px;
+  font-size: 20px;
+}
+.description {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+span.units {
+  position: relative;
+  font-size: 20px;
+  top: -40px;
 }
