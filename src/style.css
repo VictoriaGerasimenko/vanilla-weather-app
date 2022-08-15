@@ -19,7 +19,7 @@ div h1 {
   font-size: 38px;
   line-height: 48px;
   color: #272142;
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 button.btn {
@@ -61,11 +61,23 @@ img {
   width: 90px;
   height: 90px;
 }
+#temperature img {
+  position: relative;
+
+  top: -25px;
+}
 .link-github {
   margin-top: 80px;
   margin-bottom: 0;
   padding-bottom: 0;
   text-align: center;
+}
+.link-github a {
+  text-decoration: none;
+}
+.link-github a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 body.background {
   background: white;
@@ -84,4 +96,11 @@ span.units {
   position: relative;
   font-size: 20px;
   top: -40px;
+}
+span.units a {
+  text-decoration: none;
+}
+span.units a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
