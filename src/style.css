@@ -104,3 +104,6 @@ span.units a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+.description::first-letter {
+  text-transform: capitalize;
+}
