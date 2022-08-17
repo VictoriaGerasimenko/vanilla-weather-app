@@ -102,8 +102,11 @@ span.units a {
 }
 span.units a:hover {
   cursor: pointer;
-  text-decoration: underline;
 }
 .description::first-letter {
   text-transform: capitalize;
+}
+span.units a.active {
+  color: #212121;
+  cursor: default;
 }
