@@ -101,21 +101,23 @@ function displayWeatherCondition(response) {
   getForecast(response.data.coord);
 }
 
-function searchCity(event) {
-  event.preventDefault();
-  let inputCity = document.querySelector("#inputCity").value;
-  console.log(inputCity);
+function searchCity(city) {
   let apiKey = "a43564c91a6c605aeb564c9ed02e3858";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${inputCity}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#inputCity");
+  searchCity(cityInputElement.value);
+}
+
 let inputElement = document.querySelector("#search-form");
-inputElement.addEventListener("submit", searchCity);
+inputElement.addEventListener("submit", handleSubmit);
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
-displayForecast();
-searchCity();
+searchCity("Kyiv");
